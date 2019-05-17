@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso Dev</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.svg" alt="Logo 26andFour" class="logo">
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="./images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id='nav'>
+                    <li id='exit' class="exit-btn hide-desktop"><img src="./images/exit.svg" alt="exit menu"></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">servicos</a></li>
+                    <li><a href="#">sobre</a></li>
+                    <li><a href="#">contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <img src="./images/server.svg" alt="server grafic" class="server">
+            <h1>Hospedagem para a Web Moderna</h1>
+            <p class="suhead">Use um servidor pagando apenas pelo que voce usa.</p>
+            <img src="./images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="./images/icon-1.svg" alt="Calendar Icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                </li>
+                <li>
+                    <img src="./images/icon-2.svg" alt="Calendar Icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                </li>
+                <li>
+                    <img src="./images/icon-3.svg" alt="Calendar Icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="./images/user1.png" alt="User testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</blockquote>
+                        <figcaption>- Jane Doe</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./images/user2.png" alt="User testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</blockquote>
+                        <figcaption>- Jane Doe</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Inicie seu teste gratuito agora!</h2>
+        <a href="#" class="cta">Comece</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="./images/logo-white.svg" alt="logo" class="logo">
+                </a>
+                <p class="address">Italivio de Souza, 840<br>BR</p>
+                <ul class="footer-links">
+                    <li><a href="#">Termos do servico</a></li>
+                    <li><a href="#">Politica de privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click',(e)=>{
+            nav.classList.toggle('hide-mobile');~
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click',(e)=>{
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    
+    </script>
+</body>
+</html>
